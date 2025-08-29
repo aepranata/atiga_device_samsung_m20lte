@@ -22,7 +22,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.exynos7904
 BOARD_SEPOLICY_TEE_FLAVOR := mobicore
 
 # SPL
-VENDOR_SECURITY_PATCH := 2022-03-01
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Inherit common board flags
 include device/samsung/universal7904-common/BoardConfigCommon.mk

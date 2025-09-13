@@ -5,6 +5,9 @@ $(call inherit-product, device/samsung/universal7904-common/universal7904-common
 
 $(call inherit-product, vendor/samsung/m20lte/m20lte-vendor.mk)
 
+# Inherit Atiga Extra
+$(call inherit-product-if-exists, vendor/atiga/extra/atiga-extra.mk)
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \

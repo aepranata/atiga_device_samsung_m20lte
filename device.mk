@@ -8,6 +8,10 @@ $(call inherit-product, vendor/samsung/m20lte/m20lte-vendor.mk)
 # Inherit Atiga Extra
 $(call inherit-product-if-exists, vendor/atiga/extra/atiga-extra.mk)
 
+# Camera
+PRODUCT_PACKAGES += \
+	GCamGO_M20
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
